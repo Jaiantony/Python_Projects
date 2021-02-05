@@ -20,4 +20,4 @@ def Download_Audio(a):
     obj.streams.get_audio_only().download(output_path="#path need to be saved") #getting only auido
     print("Downloaded Succesfully in path")
 Button.on_click(Download_Video)
-Button1.on_click(Download_Video)
+Button1.on_click(Download_Audio)
