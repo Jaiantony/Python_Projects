@@ -23,7 +23,6 @@ def api2():
         files = request.files['files']
         str_files=files.read().decode('utf-8')
         file_t=str_files.splitlines()
-        valid="Valid"
         for i in file_t:
                 bool_result_with_dns = is_email(i, check_dns=True)
                 if bool_result_with_dns==False:
